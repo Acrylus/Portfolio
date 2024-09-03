@@ -33,7 +33,7 @@ st.markdown(
 Social = [
     {"name": "Facebook", "path": "views/images/socials/Facebook.png", "url": "https://www.facebook.com/acrylus"},
     {"name": "Instagram", "path": "views/images/socials/Instagram.png", "url": "https://www.instagram.com/acryluscrz"},
-    {"name": "GitHub", "path": "views/images/socials/GitHub.png", "url": "https://github.com/Acrylus"},
+    {"name": "GitHub", "path": "views/images/socials/Github.png", "url": "https://github.com/Acrylus"},
     {"name": "Threads", "path": "views/images/socials/Threads.png", "url": "https://www.threads.net/acryluscrz"},
     {"name": "LinkedIn", "path": "views/images/socials/LinkedIn.png", "url": "https://www.linkedin.com/in/anton-joseph-cruz-8b13a42b0"},
     {"name": "Discord", "path": "views/images/socials/Discord.png", "url": "https://discordapp.com/users/867040281365970984"},
