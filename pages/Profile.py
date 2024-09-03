@@ -179,27 +179,27 @@ for i, tab in enumerate(diatabs):
 
 st.write('---')
 
-st.subheader('Support :material/favorite:')
+# st.subheader('Support :material/favorite:')
 
-Inspiration = ImageData("images/games/Zairen.jpg")
+# Inspiration = ImageData("images/games/Zairen.jpg")
 
-image, description = st.columns([1, 3])
+# image, description = st.columns([1, 3])
 
-with image:
-    st.markdown(f'<img src="data:image/png;base64, {Inspiration}" class="profile">', unsafe_allow_html=True)
+# with image:
+#     st.markdown(f'<img src="data:image/png;base64, {Inspiration}" class="profile">', unsafe_allow_html=True)
 
-with description:
-    st.subheader('Zairen Mae Niñofranco')
-    st.link_button("Profile", "https://www.facebook.com/danderexzai", type="primary")
+# with description:
+#     st.subheader('Zairen Mae Niñofranco')
+#     st.link_button("Profile", "https://www.facebook.com/danderexzai", type="primary")
 
-st.write('---')
+# st.write('---')
 
 def send_email(name, email, message):
     msg = EmailMessage()
     msg.set_content(message)
     msg['Subject'] = f"New Contact Form Submission from {name} Email: {email}"
     user = "smsalertprac@gmail.com"
-    msg['To'] = "barbariankingken@gmail.com"
+    msg['To'] = "theantonjoseph@gmail.com"
     msg["From"] = user
     password = "nuescnvuiwlhhlqi"
 
