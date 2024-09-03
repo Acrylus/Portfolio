@@ -135,7 +135,7 @@ with Right:
 
     with Resume:  
         st.write('Resume')
-        with open("Resume.pdf", "rb") as pdf_file:
+        with open("files/Resume.pdf", "rb") as pdf_file:
             document = pdf_file.read()
 
         st.download_button(
