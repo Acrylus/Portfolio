@@ -1,13 +1,9 @@
-from dotenv import load_dotenv
 import smtplib
-import os
 import streamlit as st
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.message import EmailMessage
 import base64
-
-load_dotenv()
 
 st.markdown(
     """
