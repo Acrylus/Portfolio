@@ -1,12 +1,6 @@
 import streamlit as st
 import base64
 
-st.logo(
-    "images/Acrylus.png",
-    link="https://streamlit.io/gallery",
-    icon_image="images/Acrylus.png",
-)
-
 st.markdown(
     """
     <style>
@@ -31,8 +25,8 @@ def ImageData(ImagePath):
     with open(ImagePath, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode('utf-8')
 
-Profile_Steam = ImageData("images/games/Zairen.jpg")
-Profile_Roblox = ImageData("images/games/Roblox.png")
+Profile_Steam = ImageData("pages/images/games/Zairen.jpg")
+Profile_Roblox = ImageData("pages/images/games/Roblox.png")
 
 st.title('Online Persona')
 st.subheader('Acrylus')
@@ -41,7 +35,7 @@ st.write('---')
 
 st.subheader('Adventure Quest Worlds Profile:')
 
-st.image("images/AQW.png")
+st.image("pages/images/AQW.png")
 
 st.write('---')
 

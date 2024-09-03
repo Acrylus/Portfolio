@@ -3,12 +3,6 @@ import base64
 import math
 import requests
 
-st.logo(
-    "images/Acrylus.png",
-    link="https://streamlit.io/gallery",
-    icon_image="images/Acrylus.png",
-)
-
 st.markdown(
     """
     <style>
@@ -62,49 +56,49 @@ st.markdown(
 )
     
 LanguageIcons = {
-    "HTML": "images/languages/Html.png",
-    "CSS": "images/languages/CSS.png",
-    "SCSS": "images/languages/SCSS.png",
-    "JavaScript": "images/languages/JavaScript.png",
-    "TypeScript": "images/languages/TypeScript.png",
-    "Java": "images/languages/Java.png",
-    "Dockerfile": "images/languages/Docker.png",
-    "Python": "images/languages/Python.png",
-    "PHP": "images/languages/Php.png",
-    "C": "images/languages/C.png",
-    "C++": "images/languages/C++.png",
-    "C#": "images/languages/C#.png",
-    "Spring Boot": "images/languages/SpringBoot.png",
-    "Django": "images/languages/Django.png",
-    "Jupyter Notebook": "images/languages/Jupyter.png",
-    "MySQL": "images/languages/MySQL.png",
-    "SQLite": "images/languages/SQLite.png"
+    "HTML": "pages/images/languages/Html.png",
+    "CSS": "pages/images/languages/CSS.png",
+    "SCSS": "pages/images/languages/SCSS.png",
+    "JavaScript": "pages/images/languages/JavaScript.png",
+    "TypeScript": "pages/images/languages/TypeScript.png",
+    "Java": "pages/images/languages/Java.png",
+    "Dockerfile": "pages/images/languages/Docker.png",
+    "Python": "pages/images/languages/Python.png",
+    "PHP": "pages/images/languages/Php.png",
+    "C": "pages/images/languages/C.png",
+    "C++": "pages/images/languages/C++.png",
+    "C#": "pages/images/languages/C#.png",
+    "Spring Boot": "pages/images/languages/SpringBoot.png",
+    "Django": "pages/images/languages/Django.png",
+    "Jupyter Notebook": "pages/images/languages/Jupyter.png",
+    "MySQL": "pages/images/languages/MySQL.png",
+    "SQLite": "pages/images/languages/SQLite.png"
 }
 
 # Frontend
 Frontends = [
-    {"name": "HTML", "path": "images/languages/Html.png", "url": "", "percentage": 70, "language": "HTML"},
-    {"name": "CSS", "path": "images/languages/CSS.png", "url": "", "percentage": 70, "language": "CSS"},
-    {"name": "SCSS", "path": "images/languages/SCSS.png", "url": "", "percentage": 70, "language": "SCSS"},
-    {"name": "JavaScript", "path": "images/languages/JavaScript.png", "url": "", "percentage": 30, "language": "JavaScript"},
-    {"name": "TypeScript", "path": "images/languages/TypeScript.png", "url": "", "percentage": 10, "language": "TypeScript"},
-    {"name": "Next.js", "path": "images/languages/Next.png", "url": "", "percentage": 20, "language": "JavaScript"},
-    {"name": "React", "path": "images/languages/React.png", "url": "", "percentage": 60, "language": "JavaScript"}
+    {"name": "HTML", "path": "pages/images/languages/Html.png", "url": "", "percentage": 70, "language": "HTML"},
+    {"name": "CSS", "path": "pages/images/languages/CSS.png", "url": "", "percentage": 70, "language": "CSS"},
+    {"name": "SCSS", "path": "pages/images/languages/SCSS.png", "url": "", "percentage": 70, "language": "SCSS"},
+    {"name": "JavaScript", "path": "pages/images/languages/JavaScript.png", "url": "", "percentage": 30, "language": "JavaScript"},
+    {"name": "TypeScript", "path": "pages/images/languages/TypeScript.png", "url": "", "percentage": 10, "language": "TypeScript"},
+    {"name": "Next.js", "path": "pages/images/languages/Next.png", "url": "", "percentage": 20, "language": "JavaScript"},
+    {"name": "React", "path": "pages/images/languages/React.png", "url": "", "percentage": 60, "language": "JavaScript"}
 ]
 
 # Backend
 Backends = [
-    {"name": "C", "path": "images/languages/C.png", "url": "", "percentage": 70, "language": "C"},
-    {"name": "C++", "path": "images/languages/C++.png", "url": "", "percentage": 80, "language": "C++"},
-    {"name": "C#", "path": "images/languages/C#.png", "url": "", "percentage": 10, "language": "C#"},
-    {"name": "Java", "path": "images/languages/Java.png", "url": "", "percentage": 90, "language": "Java"},
-    {"name": "Spring Boot", "path": "images/languages/SpringBoot.png", "url": "", "percentage": 70, "language": "Java"},
-    {"name": "PHP", "path": "images/languages/Php.png", "url": "", "percentage": 50, "language": "PHP"},
-    {"name": "Python", "path": "images/languages/Python.png", "url": "", "percentage": 50, "language": "Python"},
-    {"name": "Django", "path": "images/languages/Django.png", "url": "", "percentage": 50, "language": "Python"},
-    {"name": "Jupyter", "path": "images/languages/Jupyter.png", "url": "", "percentage": 50, "language": "Python"},
-    {"name": "MySQL", "path": "images/languages/MySQL.png", "url": "", "percentage": 60, "language": "SQL"},
-    {"name": "SQLite", "path": "images/languages/SQLite.png", "url": "", "percentage": 60, "language": "SQL"}
+    {"name": "C", "path": "pages/images/languages/C.png", "url": "", "percentage": 70, "language": "C"},
+    {"name": "C++", "path": "pages/images/languages/C++.png", "url": "", "percentage": 80, "language": "C++"},
+    {"name": "C#", "path": "pages/images/languages/C#.png", "url": "", "percentage": 10, "language": "C#"},
+    {"name": "Java", "path": "pages/images/languages/Java.png", "url": "", "percentage": 90, "language": "Java"},
+    {"name": "Spring Boot", "path": "pages/images/languages/SpringBoot.png", "url": "", "percentage": 70, "language": "Java"},
+    {"name": "PHP", "path": "pages/images/languages/Php.png", "url": "", "percentage": 50, "language": "PHP"},
+    {"name": "Python", "path": "pages/images/languages/Python.png", "url": "", "percentage": 50, "language": "Python"},
+    {"name": "Django", "path": "pages/images/languages/Django.png", "url": "", "percentage": 50, "language": "Python"},
+    {"name": "Jupyter", "path": "pages/images/languages/Jupyter.png", "url": "", "percentage": 50, "language": "Python"},
+    {"name": "MySQL", "path": "pages/images/languages/MySQL.png", "url": "", "percentage": 60, "language": "SQL"},
+    {"name": "SQLite", "path": "pages/images/languages/SQLite.png", "url": "", "percentage": 60, "language": "SQL"}
 ]
 
 Contributor = [
