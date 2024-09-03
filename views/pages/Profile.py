@@ -31,12 +31,12 @@ st.markdown(
 )
 
 Social = [
-    {"name": "Facebook", "path": "pages/images/socials/Facebook.png", "url": "https://www.facebook.com/acrylus"},
-    {"name": "Instagram", "path": "pages/images/socials/Instagram.png", "url": "https://www.instagram.com/acryluscrz"},
-    {"name": "GitHub", "path": "pages/images/socials/GitHub.png", "url": "https://github.com/Acrylus"},
-    {"name": "Threads", "path": "pages/images/socials/Threads.png", "url": "https://www.threads.net/acryluscrz"},
-    {"name": "LinkedIn", "path": "pages/images/socials/LinkedIn.png", "url": "https://www.linkedin.com/in/anton-joseph-cruz-8b13a42b0"},
-    {"name": "Discord", "path": "pages/images/socials/Discord.png", "url": "https://discordapp.com/users/867040281365970984"},
+    {"name": "Facebook", "path": "views/images/socials/Facebook.png", "url": "https://www.facebook.com/acrylus"},
+    {"name": "Instagram", "path": "views/images/socials/Instagram.png", "url": "https://www.instagram.com/acryluscrz"},
+    {"name": "GitHub", "path": "views/images/socials/GitHub.png", "url": "https://github.com/Acrylus"},
+    {"name": "Threads", "path": "views/images/socials/Threads.png", "url": "https://www.threads.net/acryluscrz"},
+    {"name": "LinkedIn", "path": "views/images/socials/LinkedIn.png", "url": "https://www.linkedin.com/in/anton-joseph-cruz-8b13a42b0"},
+    {"name": "Discord", "path": "views/images/socials/Discord.png", "url": "https://discordapp.com/users/867040281365970984"},
 ]
 
 academics = [
@@ -45,7 +45,7 @@ academics = [
         "date": "August 2024 - Present",
         "course": "Capstone and Research 2",
         "role": "Leader | Full-Stack Developer | UI/UX Designer",
-        "image": "pages/images/TOW.png",
+        "image": "views/images/TOW.png",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
@@ -56,7 +56,7 @@ academics = [
         "date": "January 2024 - May 2024",
         "course": "Capstone and Research 1",
         "role": "Leader | Full-Stack Developer | UI/UX Designer",
-        "image": "pages/images/TOW.png",
+        "image": "views/images/TOW.png",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
@@ -67,7 +67,7 @@ academics = [
         "date": "January 2024 - May 2024",
         "course": "Systems Integration and Architecture",
         "role": "Backend Developer | UI/UX Designer",
-        "image": "pages/images/TOW.png",
+        "image": "views/images/TOW.png",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
@@ -78,7 +78,7 @@ academics = [
         "date": "August 2023 - December 2023",
         "course": "Application Development",
         "role": "Full-Stack Developer | UI/UX Designer",
-        "image": "pages/images/TOW.png",
+        "image": "views/images/TOW.png",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
@@ -92,7 +92,7 @@ def ImageData(ImagePath):
 
 SocialPaths = [ImageData(social['path']) for social in Social]
 
-Profile = ImageData("pages/images/Profile.jpg")
+Profile = ImageData("views/images/Profile.jpg")
 
 Left, Right = st.columns(2)
 
@@ -123,7 +123,7 @@ with Right:
 
     with Resume:  
         st.write('Resume')
-        with open("pages/files/Resume.pdf", "rb") as pdf_file:
+        with open("views/files/Resume.pdf", "rb") as pdf_file:
             document = pdf_file.read()
 
         st.download_button(

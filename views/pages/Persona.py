@@ -25,8 +25,8 @@ def ImageData(ImagePath):
     with open(ImagePath, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode('utf-8')
 
-Profile_Steam = ImageData("pages/images/games/Zairen.jpg")
-Profile_Roblox = ImageData("pages/images/games/Roblox.png")
+Profile_Steam = ImageData("views/images/games/Zairen.jpg")
+Profile_Roblox = ImageData("views/images/games/Roblox.png")
 
 st.title('Online Persona')
 st.subheader('Acrylus')
@@ -35,7 +35,7 @@ st.write('---')
 
 st.subheader('Adventure Quest Worlds Profile:')
 
-st.image("pages/images/AQW.png")
+st.image("views/images/AQW.png")
 
 st.write('---')
 
