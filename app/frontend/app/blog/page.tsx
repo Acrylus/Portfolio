@@ -9,12 +9,11 @@ const posts = [
 export default function BlogPage() {
   return (
     <div className="page blog-page">
-      <section className="blog-heading reveal-up">
-        <p className="eyebrow">The notebook / 001</p>
-        <h1>Notes from<br /><em>the in-between.</em></h1>
-        <p className="blog-deck">Ideas, experiments, and observations from a life spent making things for the web.</p>
-        <img className="blog-cover" src="/bab.jpg" alt="Night street photographs and shadows" />
+      <section className="timeline-heading reveal-up" aria-labelledby="blog-title">
+        <p className="eyebrow">Portfolio / Blog</p>
+        <h1 id="blog-title">Notes from<br /><em>the in-between.</em></h1>
       </section>
+      <p className="blog-deck">Ideas, experiments, and observations from a life spent making things for the web.</p>
       <section className="post-list" aria-label="Blog posts">
         {posts.map((post, index) => (
           <article className="post-row" key={post.title}>

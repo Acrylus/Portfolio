@@ -17,8 +17,8 @@ export default function ProfilePage() {
           </div>
         </div>
       </section>
-      <section className="soundtrack-section" id="portfolio" aria-labelledby="portfolio-title">
-        <div className="soundtrack-overlay">
+      <section className="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+        <div className="portfolio-overlay">
           <p className="eyebrow">Portfolio</p>
           <h2 id="portfolio-title">Selected work and notes.</h2>
           <Link className="section-link" href="/blog">Open blog <span>↗</span></Link>
